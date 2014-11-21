@@ -25,6 +25,9 @@ public class GameActivity extends Activity
 		setupListeners();
 	}
 	
+	/**
+	 * Creates a series of popup's that will tell the user that they should stop touching the button.
+	 */
 	private void checkButtonPress()
 	{
 		numberClicks++;
@@ -43,6 +46,9 @@ public class GameActivity extends Activity
 		}
 	}
 	
+	/**
+	 * makes the button that is not to be touched.  If touched to many times it will go to the else screen.
+	 */
 	private void setupListeners()
 	{
 		noButton.setOnClickListener(new View.OnClickListener()

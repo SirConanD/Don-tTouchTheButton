@@ -13,7 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="194dp"
         android:layout_marginLeft="41dp"
-        android:text="Button" />
+        android:text="Retry" />
 
     <Button
         android:id="@+id/quitButton"
@@ -22,6 +22,6 @@
         android:layout_alignBottom="@+id/returnButton"
         android:layout_alignParentRight="true"
         android:layout_marginRight="50dp"
-        android:text="Button" />
+        android:text="Quit" />
 
 </RelativeLayout>
