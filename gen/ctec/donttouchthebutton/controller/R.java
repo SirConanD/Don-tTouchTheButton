@@ -1071,6 +1071,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020057;
     }
     public static final class id {
+        public static final int RelativeLayout=0x7f09003c;
         public static final int action_bar=0x7f09001c;
         public static final int action_bar_activity_content=0x7f090001;
         public static final int action_bar_container=0x7f09001b;
@@ -1104,12 +1105,14 @@ containing a value of this type.
         public static final int list_item=0x7f090029;
         public static final int middle=0x7f090018;
         public static final int never=0x7f090012;
-        public static final int noButton=0x7f09003c;
+        public static final int noButton=0x7f09003f;
         public static final int none=0x7f090019;
         public static final int normal=0x7f090007;
         public static final int progress_circular=0x7f090004;
         public static final int progress_horizontal=0x7f090005;
+        public static final int quitButton=0x7f09003e;
         public static final int radio=0x7f09002f;
+        public static final int returnButton=0x7f09003d;
         public static final int search_badge=0x7f090032;
         public static final int search_bar=0x7f090031;
         public static final int search_button=0x7f090033;
@@ -1127,7 +1130,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f09001e;
         public static final int submit_area=0x7f090039;
         public static final int tabMode=0x7f090008;
-        public static final int textView1=0x7f09003d;
+        public static final int textView1=0x7f090040;
         public static final int title=0x7f09002b;
         public static final int top_action_bar=0x7f090020;
         public static final int up=0x7f090021;
