@@ -28,6 +28,17 @@ public class ElseActivity extends Activity
 
 	private void setupListeners()
 	{
+		quitButton.setOnClickListener(new OnClickListener()
+		{
+			
+		    @Override
+		    public void onClick(View currentView)
+		    {
+		    	finish();
+		    	System.exit(0);
+		    }
+		});
+		
 		returnButton.setOnClickListener(new OnClickListener()
 		{
 			

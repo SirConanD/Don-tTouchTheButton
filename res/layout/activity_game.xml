@@ -8,9 +8,9 @@
         android:id="@+id/noButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="189dp"
+        android:layout_marginTop="193dp"
         android:text="Do Not Touch" />
 
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class GameActivity extends Activity
 {
@@ -36,14 +37,32 @@ public class GameActivity extends Activity
 		{
 			if (numberClicks == 0)
 			{
-				
+			
 			}
 			else if (numberClicks == 1)
 			{
-				
+				Toast.makeText(getBaseContext(), "Don't touch the button.", Toast.LENGTH_LONG).show();
 			}
-			
+			else if (numberClicks == 2)
+			{
+			    Toast.makeText(getBaseContext(), "I said Don't touch the button!", Toast.LENGTH_LONG).show();	
+			}
+			else if (numberClicks == 3)
+			{
+				Toast.makeText(getBaseContext(), "Now I am getting angry.", Toast.LENGTH_LONG).show();
+			}
+			else if (numberClicks == 4)
+			{
+				Toast.makeText(getBaseContext(), "Push that button one more time and you will regret it!", Toast.LENGTH_LONG).show();
+				changeScreen();
+			}
 		}
+	}
+	
+	private void changeScreen()
+	{
+		Intent elseScreenIntent = new Intent(getBaseContext(), ElseActivity.class);
+		startActivityForResult(elseScreenIntent, 0);
 	}
 	
 	/**
@@ -57,9 +76,7 @@ public class GameActivity extends Activity
 			@Override
 			public void onClick(View currentView)
 			{
-				Intent elseScreenIntent = new Intent(currentView.getContext(), ElseActivity.class);
-				startActivityForResult(elseScreenIntent, 0);
-				
+				checkButtonPress();
 			}
 		});
 	}
